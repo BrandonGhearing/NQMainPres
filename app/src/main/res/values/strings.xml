@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">NQ_SocialApp</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_nq_directory">nq_directory</string>
+    <string name="title_activity_nq_my_studio">nq_myStudio</string>
+    <string name="directory">Directory</string>
+    <string name="home">Home</string>
+    <string name="my_studio">My Studio</string>
+    <string name="directory_location">DIRECTORY</string>
+    <string name="settings">Application Settings to determine user preferences</string>
+    <string name="menu_options">drop down menu</string>
+    <string name="NQ_logo">NQ\'s logo</string>
+    <string name="camera_access">Button to access the camera</string>
+    <string name="home_location">HOME</string>
+    <string name="my_studio_location">MY STUDIO</string>
+</resources>

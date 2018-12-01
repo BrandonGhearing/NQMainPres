@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayout4"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".nq_myStudio">
+
+    <ImageView
+        android:id="@+id/cameraButton"
+        android:layout_width="55dp"
+        android:layout_height="63dp"
+        android:background="@android:color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/myStudioButton"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/directoryButton"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5"
+        app:srcCompat="@android:drawable/ic_notification_overlay"
+        android:contentDescription="@string/camera_access" />
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="384dp"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </android.support.design.widget.AppBarLayout>
+
+    <Button
+        android:id="@+id/homeButton"
+        android:layout_width="64dp"
+        android:layout_height="63dp"
+        android:background="@android:color/black"
+        android:text="@string/home"
+        android:onClick="home"
+        android:textColor="#08e4f4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/directoryButton"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+    <Button
+        android:id="@+id/directoryButton"
+        android:layout_width="101dp"
+        android:layout_height="64dp"
+        android:background="@android:color/black"
+        android:text="@string/directory"
+        android:onClick="directory"
+        android:textColor="#08e4f4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/cameraButton"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/homeButton"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+    <Button
+        android:id="@+id/myStudioButton"
+        android:layout_width="166dp"
+        android:layout_height="63dp"
+        android:background="@android:color/black"
+        android:text="@string/my_studio"
+        android:onClick="myStudio"
+        android:textColor="#08e4f4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/cameraButton"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+    <ImageView
+        android:id="@+id/settingsButton"
+        android:layout_width="78dp"
+        android:layout_height="47dp"
+        android:background="@android:color/black"
+        android:contentDescription="@string/settings"
+        android:tint="#08e4f4"
+        app:layout_constraintBottom_toTopOf="@+id/imageView5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/locationButton"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/baseline_settings_black_18dp" />
+
+    <Button
+        android:id="@+id/locationButton"
+        android:layout_width="228dp"
+        android:layout_height="47dp"
+        android:background="@android:color/black"
+        android:text="@string/my_studio_location"
+        android:textSize="24sp"
+        android:textColor="#08e4f4"
+        app:layout_constraintBottom_toTopOf="@+id/imageView5"
+        app:layout_constraintEnd_toStartOf="@+id/settingsButton"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/dropdownButton"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/dropdownButton"
+        android:layout_width="78dp"
+        android:layout_height="47dp"
+        android:background="@android:color/black"
+        android:contentDescription="@string/menu_options"
+        android:tint="#08e4f4"
+        app:layout_constraintBottom_toTopOf="@+id/imageView5"
+        app:layout_constraintEnd_toStartOf="@+id/locationButton"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/baseline_view_headline_black_18dp" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="402dp"
+        android:layout_height="456dp"
+        app:layout_constraintBottom_toTopOf="@+id/cameraButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/settingsButton"
+        app:srcCompat="@drawable/nq_logo2"
+        android:contentDescription="@string/NQ_logo" />
+
+</android.support.constraint.ConstraintLayout>

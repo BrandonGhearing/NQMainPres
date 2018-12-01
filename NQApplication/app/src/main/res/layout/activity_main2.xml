@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff200"
+    tools:context=".MainActivity">
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="16dp" />
+
+    <Button
+        android:id="@+id/gallery"
+        android:layout_width="84dp"
+        android:layout_height="78dp"
+        android:background="@drawable/gallery"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button9"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="84dp"
+        android:layout_height="78dp"
+        android:background="@drawable/myare"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/gallery" />
+
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="84dp"
+        android:layout_height="78dp"
+        android:background="@drawable/feedback"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button11"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/button11"
+        android:layout_width="84dp"
+        android:layout_height="78dp"
+        android:background="@drawable/settings"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/button10" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="70dp"
+        android:layout_height="75dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button10"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/button9"
+        app:srcCompat="@android:drawable/ic_notification_overlay" />
+
+    <Button
+        android:id="@+id/button12"
+        android:layout_width="194dp"
+        android:layout_height="71dp"
+        android:background="@drawable/myare"
+        app:layout_constraintEnd_toStartOf="@+id/button14"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/button13"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <Button
+        android:id="@+id/button13"
+        android:layout_width="84dp"
+        android:layout_height="70dp"
+        android:background="@drawable/star"
+        app:layout_constraintEnd_toStartOf="@+id/button12"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <Button
+        android:id="@+id/button14"
+        android:layout_width="84dp"
+        android:layout_height="70dp"
+        android:background="@drawable/star"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/button12"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="358dp"
+        android:layout_height="372dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button12"
+        tools:srcCompat="@tools:sample/avatars[2]" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="261dp"
+        android:layout_height="90dp"
+        android:text="Desription of the Video Here"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="508dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton9"
+        android:layout_width="30dp"
+        android:layout_height="35dp"
+        app:srcCompat="@android:drawable/star_big_on"
+        tools:layout_editor_absoluteX="317dp"
+        tools:layout_editor_absoluteY="451dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton14"
+        android:layout_width="30dp"
+        android:layout_height="35dp"
+        app:srcCompat="@android:drawable/star_big_on"
+        tools:layout_editor_absoluteX="355dp"
+        tools:layout_editor_absoluteY="451dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton15"
+        android:layout_width="30dp"
+        android:layout_height="35dp"
+        app:srcCompat="@android:drawable/star_big_on"
+        tools:layout_editor_absoluteX="203dp"
+        tools:layout_editor_absoluteY="451dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton16"
+        android:layout_width="30dp"
+        android:layout_height="35dp"
+        app:srcCompat="@android:drawable/star_big_on"
+        tools:layout_editor_absoluteX="241dp"
+        tools:layout_editor_absoluteY="451dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton17"
+        android:layout_width="30dp"
+        android:layout_height="35dp"
+        app:srcCompat="@android:drawable/star_big_on"
+        tools:layout_editor_absoluteX="279dp"
+        tools:layout_editor_absoluteY="451dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="134dp"
+        android:layout_height="33dp"
+        android:text="Rating: "
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton15"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="453dp" />
+
+</android.support.constraint.ConstraintLayout>
